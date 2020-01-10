@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label GridPane.rowIndex="2" />
+        <Label text="Maximum Heart Rate" GridPane.rowIndex="3" />
+        <TextField fx:id="MHRfield" disable="true" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button fx:id="calculate" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label text="Target Heart Rate" GridPane.rowIndex="4" />
+      <TextField fx:id="THRfield" disable="true" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label text="Enter Your Age" />
+      <TextField fx:id="ageInput" GridPane.columnIndex="1" />
+      <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2" />
+      <Label text="Results:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Ubuntu" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorlabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    </children>
+    <padding>
+        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+    </padding>
+</GridPane>
